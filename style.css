@@ -1,0 +1,80 @@
+* {    padding: 0;
+    margin: 0;    box-sizing: border-box;
+    text-decoration: none;    list-style: none;
+}p 
+
+
+
+{
+    color: #ffffff; /* Cambia el color de todos los párrafos a blanco */}
+body {    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #C0C0C0;}
+.container {
+    max-width: 1200px;    margin: 0 auto;
+}
+.content {    min-height: 190px;
+    background: linear-gradient(
+        50deg,        rgba(0, 128, 0, 128) 0%,
+        rgba(0, 128, 0, 128) 50%    );
+}.logo-img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */    height: auto; /* Mantiene la proporción del logo */
+ }
+ .logo img {
+    width: 200px;
+    height: 200px;
+    height: auto;
+    flex-grow: 100;
+}
+ .menu {        position: absolute;
+    top: 05px;    left: 0;
+    right: 0;    display: flex;
+    align-items: center;    justify-content: space-between;
+    padding: 40px 03px;}   }
+
+.logo {    font-size: 20px;
+    color: #ffffff;    text-transform: uppercase;
+    font-weight: bold;}
+.menu .navbar {
+    display: flex;}
+.menu .navbar ul {
+    display: flex;    gap: 05px;
+     flex-grow: 05;
+}
+.menu .navbar ul li {    position: relative;
+}
+.menu .navbar ul li a {    font-size:30px;
+    padding: 10px 10px;    color: #000000;
+    display: block;    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 05px}
+.menu .navbar ul li a:hover {
+    color: #FF0000;    background-color: rgba(128, 128, 128);
+    border-radius: 15px;    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+#menu {
+    display: none;}
+.menu-icono {
+    width: 35px;    cursor: pointer;
+}
+.menu label {    cursor: pointer;
+    display: none;}
+h1 {
+    margin: 100px 0 0 20px;    color: #333;
+}
+@media (max-width: 991px) {    .content {
+        min-height: 70px;    }
+    .menu {        top: 0;
+        padding: 20px;    }
+    .menu label {        display: block;
+    }    .menu .navbar {
+        position: absolute;        top: 100%;
+        left: 0;        right: 0;
+        background: linear-gradient(
+            90deg,            rgba(203, 18, 133, 1) 0%,
+            rgba(80, 49, 145, 1) 70%        );
+        display: none;        flex-direction: column;
+    }    .menu .navbar ul {
+        flex-direction: column;        gap: 10px;
+    }    #menu:checked + label + .navbar {
+        display: flex;    }
+}
